@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M. Ariel Ady Rangga | Junior Surveyor In Building Construction</title>
+    
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Background Blueprint Grid -->
+    <div class="bg-grid"></div>
+    <div class="bg-glow-orb"></div>
+
+    <!-- Header Navigation -->
+    <header class="glass-header">
+        <div class="container nav-container">
+            <div class="logo">
+                M. ARIEL ADY RANGGA
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#" class="nav-link active" data-tab="home">Utama</a></li>
+                    <li><a href="#" class="nav-link" data-tab="about">Tentang Saya</a></li>
+                    <li><a href="#" class="nav-link" data-tab="experience">Pengalaman Kerja</a></li>
+                    <li><a href="#" class="nav-link" data-tab="portfolio">Portofolio</a></li>
+                    <li><a href="#" class="nav-link" data-tab="contact">Kontak</a></li>
+                </ul>
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="container main-content">
+
+        <!-- SECTION 1: UTAMA / HERO -->
+        <section id="home" class="tab-content active">
+            <div class="hero-layout">
+                <div class="hero-center">
+                    <!-- Avatar with Spinning Crosshair -->
+                    <div class="avatar-wrapper">
+                        <img src="https://www.jenova.ai/f/file_01kvcwcfxfm657mc1j5tn31687.png" alt="M. Ariel Ady Rangga" class="profile-avatar">
+                        <div class="crosshair-ring"></div>
+                    </div>
+                    
+                    <h1 class="hero-name">M. Ariel Ady Rangga</h1>
+                    <h2 class="hero-title">Junior Surveyor in Building Construction</h2>
+                    <p class="hero-summary">
+                        Profesional muda berusia 20 tahun dengan pengalaman lebih dari 2 tahun di berbagai proyek infrastruktur vital: mulai dari kilang (Refinery), jalan beton/aspal, hingga pondasi mesin pabrik skala besar. Ahli dalam pemetaan presisi dan pengoperasian Total Station, Theodolite & Waterpass.
+                    </p>
+
+                    <!-- Social Icons Bar -->
+                    <div class="social-bar">
+                        <a href="https://wa.me/6285649351378" target="_blank" class="social-btn whatsapp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="mailto:m.arieladyrangga@gmail.com" class="social-btn email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://www.linkedin.com/in/m-ariel-ady-rangga-949139340" target="_blank" class="social-btn linkedin"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://instagram.com/aidy.rangga" target="_blank" class="social-btn instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+
+                    <!-- Linktree Stack -->
+                    <div class="linktree-stack">
+                        <a href="https://wa.me/6285649351378" target="_blank" class="link-card glass-card hover-glow-green">
+                            <i class="fab fa-whatsapp icon-wa"></i> Hubungi via WhatsApp Chat
+                        </a>
+                        <a href="CV - M Ariel Ady Rangga - Asisten Surveyor.pdf" class="link-card glass-card hover-glow-orange" Download="CV - M Ariel Ady Rangga - Asisten Surveyor.pdf">
+                            <i class="fas fa-file-pdf icon-pdf"></i> Unduh CV Saya (PDF)
+                        </a>
+                        <a href="#" class="link-card glass-card hover-glow-cyan" onclick="switchTab('portfolio')">
+                            <i class="fas fa-images"></i> Lihat Galeri Portofolio Proyek
+                        </a>
+                        <a href="https://www.linkedin.com/in/m-ariel-ady-rangga-949139340" target="_blank" class="link-card glass-card hover-glow-blue">
+                            <i class="fab fa-linkedin"></i> Profil Profesional LinkedIn
+                        </a>
+                        <a href="mailto:m.arieladyrangga@gmail.com" class="link-card glass-card hover-glow-cyan">
+                            <i class="fas fa-paper-plane"></i> Kirim Email
+                        </a>
+                        <a href="https://instagram.com/aidy.rangga" target="_blank" class="link-card glass-card hover-glow-pink">
+                            <i class="fab fa-instagram"></i> Instagram: @aidy.rangga
+                        </a>
+                        <a href="#" class="link-card glass-card hover-glow-cyan" onclick="switchTab('about')">
+                            <i class="fas fa-user-astronaut"></i> Baca Profil & Perjalanan Saya
+                        </a>
+                        <a href="#" class="link-card glass-card hover-glow-cyan" onclick="switchTab('experience')">
+                            <i class="fas fa-briefcase"></i> Rekam Jejak Pengalaman Kerja
+                        </a>
+                        <a href="#" class="link-card glass-card hover-glow-cyan" onclick="switchTab('contact')">
+                            <i class="fas fa-address-book"></i> Formulir Kontak Langsung
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: TENTANG SAYA -->
+        <section id="about" class="tab-content">
+            <div class="section-header">
+                <h2><i class="fas fa-drafting-compass"></i> TENTANG SAYA</h2>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-col-left">
+                    <div class="photo-card glass-card">
+                        <img src="https://www.jenova.ai/f/file_01kvcwcfxfm657mc1j5tn31687.png" alt="Foto Formal">
+                    </div>
+                    <div class="bio-info glass-card">
+                        <h3>M. Ariel Ady Rangga (Rangga)</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Bojonegoro, 02 April 2006 (20 Tahun)</p>
+                        <p><i class="fas fa-graduation-cap"></i> Pendidikan: SMA (IPA)</p>
+                    </div>
+                </div>
+                
+                <div class="about-col-right">
+                    <div class="narrative glass-card">
+                        <p>
+                            Tepat satu hari setelah kelulusan SMA, saya langsung terjun ke kerasnya dunia proyek konstruksi di Gresik bersama CV Mega Mitra Construction. Memulai karir benar-benar dari bawah sebagai seorang Helper (pembantu tukang) untuk proyek Banwall Tangki dan Refinery di PT BEST Maspion. Di sinilah mental kerja keras saya diuji. Melihat dedikasi tersebut, di usia 18 tahun saya dipercaya oleh owner perusahaan untuk diangkat menjadi Asisten Surveyor. Di bawah bimbingan para insinyur proyek, saya mempelajari framework, workflow, dan algoritma pemetaan konstruksi secara otodidak langsung di lapangan. Meskipun sempat mengalami ujian berat berupa kecelakaan patah tangan kiri saat perjalanan dinas subuh yang memaksa saya rehat selama 4 bulan, filosofi hidup ikhlas dan stoik membuat saya pantang menyerah. Kini, saya telah kembali ke lapangan, terus mengasah keahlian, dan siap berkontribusi secara presisi pada proyek-proyek besar berikutnya.
+                        </p>
+                    </div>
+
+                    <div class="skills-section">
+                        <h3>Technical Skills</h3>
+                        <div class="skills-grid">
+                            <span class="skill-badge">Pengukuran Elevasi & Dimensi (Theodolite, Total Station, Waterpass)</span>
+                            <span class="skill-badge">Stake-out Titik Koordinat Presisi</span>
+                            <span class="skill-badge">Interpretasi Gambar Teknik Sipil (Shop Drawing)</span>
+                            <span class="skill-badge">AutoCAD (Dasar), Ms. Excel & Office</span>
+                        </div>
+                    </div>
+
+                    <div class="personality-section">
+                        <h3>Personality & Hobbies</h3>
+                        <ul class="hobby-list">
+                            <li><i class="fas fa-check-circle"></i> Persona Stoik & Kalem</li>
+                            <li><i class="fas fa-book-reader"></i> Membaca Buku (15 mnt/hari)</li>
+                            <li><i class="fas fa-pen-nib"></i> Menulis (350 kata/hari)</li>
+                            <li><i class="fas fa-dumbbell"></i> Olahraga Beban</li>
+                        </ul>
+                    </div>
+
+                    <button class="btn-primary" onclick="switchTab('experience')">Lihat Detail Pengalaman Kerja</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: PENGALAMAN KERJA -->
+        <section id="experience" class="tab-content">
+            <div class="section-header">
+                <h2><i class="fas fa-hard-hat"></i> REKAM JEJAK PROYEK & PENGALAMAN</h2>
+            </div>
+
+            <div class="timeline">
+                <!-- Item 1 -->
+                <div class="timeline-item glass-card">
+                    <div class="timeline-date">Mei 2026 - Sekarang</div>
+                    <div class="timeline-content">
+                        <h3>Helper (Maintenance & Repair Tangki)</h3>
+                        <h4>PT Pitu Aji Sejahtera (Sub-Kontraktor PT Linde)</h4>
+                        <p>Bertanggung jawab mendukung pekerjaan welder & fitter dalam perawatan tangki industri dengan standar safety tinggi di area PT Linde Roomo, Manyar.</p>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="timeline-item glass-card">
+                    <div class="timeline-date">Agustus 2025 - Februari 2026</div>
+                    <div class="timeline-content">
+                        <h3>Asisten Surveyor</h3>
+                        <h4>PT Vulcan Pilar Negeri (Vendor PT Lapi ITB / Konsultan Kawasan JIIPE)</h4>
+                        <p>Melakukan pengukuran topografi, penentuan level, dan monitoring berkala pada proyek jalan raya utama di area Pelabuhan Internasional KEK JIIPE Manyar.</p>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="timeline-item glass-card">
+                    <div class="timeline-date">Juli 2025 - Agustus 2025</div>
+                    <div class="timeline-content">
+                        <h3>Helper Skill / Tukang</h3>
+                        <h4>PT Pilar Lintang Pratama (Sub-Kontraktor PT Abadi Agrosindo Persada)</h4>
+                        <p>Pembangunan Pondasi Mesin Pabrik Pupuk di Balongbendo, Sidoarjo. Membantu konstruksi struktur dan pengecoran presisi tinggi untuk mesin berat.</p>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="timeline-item glass-card">
+                    <div class="timeline-date">April 2025 - Juni 2025</div>
+                    <div class="timeline-content">
+                        <h3>Helper Skill / Tukang</h3>
+                        <h4>PT Pilar Lintang Pratama (Sub-Kontraktor PT Jati Perkasa Nusantara)</h4>
+                        <p>Proyek Pondasi Tangki di Cerme. Terlibat dalam penyiapan lahan, perakitan besi tulangan, dan kontrol deviasi pengukuran dasar pondasi.</p>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="timeline-item glass-card highlight-card">
+                    <div class="timeline-date">Juni 2024 - April 2025</div>
+                    <div class="timeline-content">
+                        <h3>Asisten Surveyor & Helper</h3>
+                        <h4>CV Mega Mitra Construction</h4>
+                        <p>Menangani multi-proyek penting:</p>
+                        <ul>
+                            <li>Banwall Tangki & Pengecoran Lantai Wiremesh M-10 (PT BEST Maspion) [Helper]</li>
+                            <li>Pembangunan kantor Refinery & Pemasangan Komponen Mekanikal (PT BEST) [Helper]</li>
+                            <li>Gedung Parkir Motor 2 Lantai [Asisten Surveyor - Belajar Framework & Workflow Sipil]</li>
+                            <li>Jalan Beton 100 Meter (PT Superior Prima Sukses) [Asisten Surveyor]</li>
+                            <li>Jembatan Akses Workshop internal [Asisten Surveyor]</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: PORTOFOLIO -->
+        <section id="portfolio" class="tab-content">
+            <div class="section-header">
+                <h2><i class="fas fa-camera-retro"></i> GALERI & DOKUMENTASI</h2>
+                <p class="subtitle">Kumpulan dokumentasi otentik visualisasi progres fisik proyek, pembacaan alat survey, dan manajemen data lapangan.</p>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- Feature Card -->
+                <div class="gallery-item feature-card glass-card">
+                    <div class="feature-overlay">
+                        <i class="fas fa-ruler-combined"></i>
+                        <h3>Fondasi Presisi</h3>
+                        <p>Dokumentasi teknis stake-out</p>
+                    </div>
+                    <img src="https://www.jenova.ai/f/file_01kvcwcmn9wzvcxnmcjm532cre.png" alt="Site Engineer">
+                </div>
+
+                <!-- Placeholders for other gallery items -->
+                <div class="gallery-item glass-card placeholder-img"><span>Project A</span></div>
+                <div class="gallery-item glass-card placeholder-img"><span>Project B</span></div>
+                <div class="gallery-item glass-card placeholder-img"><span>Survey Data</span></div>
+                <div class="gallery-item glass-card placeholder-img"><span>Site Log</span></div>
+                <div class="gallery-item glass-card placeholder-img"><span>Equipment</span></div>
+            </div>
+        </section>
+
+        <!-- SECTION 5: KONTAK -->
+        <section id="contact" class="tab-content">
+            <div class="section-header">
+                <h2><i class="fas fa-headset"></i> HUBUNGI SAYA</h2>
+            </div>
+
+            <div class="contact-layout">
+                <div class="contact-form-wrapper glass-card">
+                    <h3>Kirim Pesan Langsung via WhatsApp</h3>
+                    <form id="whatsappForm">
+                        <div class="form-group">
+                            <label for="senderName">Nama Pengirim</label>
+                            <input type="text" id="senderName" required placeholder="Contoh: Budi Santoso">
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Perusahaan / Instansi</label>
+                            <input type="text" id="company" required placeholder="Contoh: PT Konstruksi Jaya">
+                        </div>
+                        <div class="form-group">
+                            <label for="messagePurpose">Tujuan Pesan</label>
+                            <textarea id="messagePurpose" rows="4" required placeholder="Saya ingin bekerja sama dengan Anda..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">
+                            <i class="fab fa-whatsapp"></i> Kirim Pesan via WhatsApp
+                        </button>
+                    </form>
+                </div>
+
+                <div class="contact-quick-links">
+                    <a href="https://wa.me/6285649351378" target="_blank" class="link-card glass-card hover-glow-green">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Direct
+                    </a>
+                    <a href="mailto:m.arieladyrangga@gmail.com" class="link-card glass-card hover-glow-cyan">
+                        <i class="fas fa-envelope"></i> Email Professional
+                    </a>
+                    <a href="https://www.linkedin.com/in/m-ariel-ady-rangga-949139340" target="_blank" class="link-card glass-card hover-glow-blue">
+                        <i class="fab fa-linkedin"></i> LinkedIn Network
+                    </a>
+                    <a href="https://instagram.com/aidy.rangga" target="_blank" class="link-card glass-card hover-glow-pink">
+                        <i class="fab fa-instagram"></i> Instagram DM
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="glass-footer">
+        <p>&copy; 2026 M. Ariel Ady Rangga. All Rights Reserved. | Cyber-Sipil Portfolio</p>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
