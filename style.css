@@ -439,85 +439,109 @@ body {
 .about-grid {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 30px;
+    gap: 40px;
+    align-items: start;
+}
+
+/* Styling Card Foto (Kiri) */
+.photo-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 15px;
+    border-radius: 12px;
 }
 
 .photo-card img {
     width: 100%;
-    border-radius: 12px;
+    border-radius: 8px;
     display: block;
+    filter: grayscale(15%); /* Memberikan kesan cool-tone seperti referensi */
 }
 
 .bio-info {
     margin-top: 20px;
-    text-align: center;
+    text-align: left;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.bio-info h3 { margin-bottom: 5px; }
+.bio-info h3 { margin-bottom: 5px; color: var(--text-main); }
 .bio-info p { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 5px; }
 
+/* Teks Cerita Karir (Kanan) */
 .narrative {
-    margin-bottom: 25px;
-    text-align: justify;
+    margin-bottom: 35px;
+    text-align: left; /* Diubah rata kiri agar rapi seperti referensi */
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #cbd5e1;
 }
 
 .skills-section, .personality-section {
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
+/* Styling Judul Section (Garis bawah Cyan) */
 .skills-section h3, .personality-section h3 {
-    margin-bottom: 15px;
-    color: var(--accent-cyan);
-    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: var(--text-main);
+    font-size: 1.3rem;
+    display: inline-block;
+    border-bottom: 2px solid var(--accent-cyan);
+    padding-bottom: 8px;
 }
 
+/* Mengubah Skill/Hobby menjadi gaya Kotak/Card */
 .skills-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
 }
 
 .skill-badge {
-    background: rgba(56, 189, 248, 0.1);
-    border: 1px solid rgba(56, 189, 248, 0.3);
-    color: var(--accent-cyan);
-    padding: 5px 12px;
-    border-radius: 20px;
-    font-size: 0.85rem;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: var(--text-main);
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    text-align: left;
 }
 
 .hobby-list {
     list-style: none;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 10px;
+    gap: 15px;
 }
 
 .hobby-list li {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 12px 15px;
+    border-radius: 8px;
     color: var(--text-muted);
     font-size: 0.95rem;
+    display: flex;
+    align-items: center;
 }
 
 .hobby-list i {
     color: var(--accent-cyan);
-    margin-right: 8px;
+    margin-right: 12px;
 }
 
-.btn-primary {
-    background: var(--accent-cyan);
-    color: #0b0f19;
-    border: none;
-    padding: 12px 25px;
-    border-radius: 8px;
-    font-weight: 700;
-    cursor: pointer;
-    transition: all 0.3s;
-    width: 100%;
-}
-
-.btn-primary:hover {
-    box-shadow: 0 0 20px var(--accent-cyan-glow);
-}
+/* Tambahkan ini khusus untuk mengatur responsivitas di layar HP */
+@media (max-width: 768px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    
+    .skills-grid, .hobby-list {
+        grid-template-columns: 1fr; /* Di HP, tampil 1 kolom ke bawah agar luas */
+    }
+    }
 
 /* --- EXPERIENCE SECTION --- */
 .timeline {
